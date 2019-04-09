@@ -3,4 +3,4 @@ project(a11_1)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(a11_1 Fraction.cpp fraction.h client.cpp)
+add_executable(a11_1 Fraction.cpp Fraction.h client.cpp Fraction.txt)

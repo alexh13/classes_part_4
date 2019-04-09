@@ -3,7 +3,7 @@
 //
 
 #include <iostream>
-#include "fraction.h"
+#include "Fraction.h"
 #include <fstream>
 #include <cassert>
 #include <string>
@@ -44,13 +44,13 @@ void BasicTest()
     }
 
 
-    cout << "\n----- Now reading Fractions from file.txt\n";
+    cout << "\n----- Now reading Fractions from Fraction.txt\n";
     ifstream in("Fraction.txt");
     assert(in);
     while (!eof(in)) {
         Fraction f;
         if (in.peek() == '#') {
-            in.ignore(128, '\n');                       //skip this line, it's a comment
+            in.ignore(128, '\n');
         } else {
             in >> f;
             cout << "Read Fraction = " << f << endl;
